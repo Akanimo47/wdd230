@@ -6,30 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akanimo Ebong: wdd230 - Web Frontend Development</title> 
   <meta name="description" content="Assignment portal for Akanimo Ephraim Ebong in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/style.css">
+  <meta property="og:url" content="https://akanimo47.github.io/wdd230/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
-  <header>
-    <img src="images/my_photo_3.jpg" alt="My profile picture">
-    <h1> Ebong, Akanimo Ephraim </h1>
+  <header class="header">
+    <h1> Akanimo Ephraim Ebong</h1>
+    <img class ="profile-picture" src="images/my_photo_3.jpg" alt="My profile picture">
   </header>
-  <main> 
-    <h2>
-      WDD230: Assignment Portal
-    </h2>
+  <nav>
     <ul>
-      <li>Lesson 02: <a href="Home"> Homepage </a></li>
-      <li>Lesson 03: <a href="Site Plan"> chamber/siteplan.html </a></li>
-      <li>Lesson 04: <a href="Chamber"> chamber/ </a></li>
-      <li>Lesson 05: <a href="#"> Title </a></li>
-      <li>Lesson 06: <a href="#"> Title </a></li>
-      <li>Lesson 07: <a href="#"> Title </a></li>
-      <li>Lesson 08: <a href="#"> Title </a></li>
-      <li>Lesson 09: <a href="#"> Title </a></li>
-      <li>Lesson 10: <a href="#"> Title </a></li>
-      <li>Lesson 11: <a href="#"> Title </a></li>
+        <li><a href="Home"> Home</a></li>
+        <li><a href="Chamber"> chamber</a></li>
+        <li><a href="Siteplan"> Site Plan</a></li>
+        <li><a href="Form"> Form </a></li>
     </ul>
+  </nav>
+  <main> 
+    <h1>
+      WDD230: Web Frontend Development
+    </h1>
+    <section class="card">
+      <h2>Learning Activities</h2>
+      <ul>
+        <li><a href="https://byui-cse.github.io/wdd230-ww-course">Home</a></li>
+        <li class="active"><a href="https://byui-cse.github.io/wdd230-ww-course/week01">Week 1</a></li>
+        <li><a href="https://byui-cse.github.io/wdd230-ww-course/week02">Week 2</a></li>
+        <li><a href="https://byui-cse.github.io/wdd230-ww-course/week03">Week 3</a></li>
+        <li><a href="https://byui-cse.github.io/wdd230-ww-course/week04">Week 4</a></li>
+        <li><a href="https://byui-cse.github.io/wdd230-ww-course/week05">Week 5</a></li>
+        <li><a href="https://byui-cse.github.io/wdd230-ww-course/week06">Week 6</a></li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>Information</h2>
+      <p>Weather: Sunny</p>
+      <p>Number of Visits: 13</p>
+      <p>Weather Data Provided by:<a href="https://openweathermap.org/city/2346229"> Open Weather Map</a></p>
+    </section>
+    
   </main>
   <footer>
     <p> 
@@ -37,6 +56,7 @@
     </p> 
   </footer> 
   <script src="scripts/date.js"></script> 
+  <script src="scripts/link.js"></script>
 </body> 
 </html> 
 
