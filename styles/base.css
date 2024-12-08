@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
-
+    
 /* base.css */
 
 /* default styles */
@@ -14,7 +14,56 @@ li {
     padding: 0;
     
 }
-
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .section {
+      padding: 30px;
+    }
+  
+    .header {
+      font-size: 18px;
+    }
+  }
+  
+  /* Media query for mobile devices (width: 480px to 767px) */
+  @media screen and (max-width: 767px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar a {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .section {
+      padding: 20px;
+    }
+  
+    .header {
+      font-size: 16px;
+    }
+  }
+  
+  /* Media query for small mobile devices (width: less than 480px) */
+  @media screen and (max-width: 479px) {
+    .navbar a {
+      padding: 8px;
+      font-size: 12px;
+    }
+  
+    .header {
+      font-size: 14px;
+      padding: 15px;
+    }
+  
+    .section {
+      padding: 15px;
+    }
+  }
 body {
     font-family: 'Quicksand', sans-serif;
     line-height: 1.5;
