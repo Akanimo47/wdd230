@@ -95,7 +95,7 @@ main {
     margin-bottom: 1rem;
     /*  */
     display: flex;
-    flex-direction: right;
+    flex-direction: row;
     justify-content: center;
     border-radius: 9px;
     background-color: #114c50;
@@ -120,7 +120,7 @@ h1 {
      */
     width: 150px;
     max-width: fit-content;
-    box-shadow: #095dbe;
+    box-shadow: blue;
     left: 5%;
     position: relative;
     box-shadow: 0 0 10px black;
