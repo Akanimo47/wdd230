@@ -120,7 +120,7 @@ h1 {
      */
     width: 150px;
     max-width: fit-content;
-    box-shadow: blue;
+    box-shadow: #007bff;
     left: 5%;
     position: relative;
     box-shadow: 0 0 10px black;
