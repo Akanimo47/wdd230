@@ -1,41 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Akanimo Ebong: wdd230 Portal</title> 
-  <meta name="discription" content="Assignment portal for Ebong Akanimo Ephraim in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-  <link rel="stylesheet" href="styles/chambers.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calabar Chamber of Commerce </title>
+    <meta name="author" content=" Akanimo Ephraim Ebong" />
+    <meta name="description" content=" WDD 230 Akanimo Ephraim Ebong : Calabar Chamber of Commerce" />
+
+
+    <meta property="og:title" content="WDD 230 - Web Frontend Development" />
+    <meta property="og:type" content="city" />
+    <meta property="og:url" content="https://akanimo47.github.io/wdd230/" />
+    <meta property="og:image" content="https://github.com/Akanimo47/wdd230/blob/main/images/akanimopr.jpg" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="css/medium.css"> -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+
+    <link rel="icon" href="favicon.ico">
+
 </head>
+
 <body>
-  <header>
-    
-    <h1> Calabar Chambers</h1>
-    <img src="images/Calabar-Chamber.png" alt="logo">
-    <nav></nav>
-  </header>
 
-  <main>
-    <div class="hero"> hero</div>
-    <div class="event"> event</div>
-    <div class="weather"> weather</div>
-    <div class="news"> news</div>
-    <div class="join"> join</div>
-    <div class="spotlight">
-      <div class="spot1"> spot1</div>
-      <div class="spot2"> spot2</div>
-      <div class="spot3"> spot3</div>
+    <header>
+        <img class="logo" src="images/crs-logo.png" alt="logo">
+        <h1>Calabar Chamber</h1>
+    </header>
+    <button id="menu"> </button>
+
+    <nav class="navigation">
+        <a href="#" class="active">Home</a>
+        <a href="discovery.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+
+    </nav>
+    <!-- <div class="hero-box">
+        <img id="hero-img" src="images/hero.webp" alt="hero image">
+        <button class="call-to-action">Join Us</button>
+    </div> -->
+    <div class="hero-box">
+        <picture>
+            <source srcset="images/wdd230large.jpg" media="(max-width: 343px)" sizes="(max-width: 343px) 100vw, 343px">
+            <source srcset="images/wdd230medium.jpg" media="(min-width: 810px)" sizes="(min-width: 810px) 50vw, 810px">
+            <img src="images/wdd230small.jpg" alt="hero-image" width="1200" height="853">
+        </picture>
     </div>
-  </main>
-  <footer>
-    <img src="images/Calabar-Chamber.png" alt="logo">
-    <p>
-      &copy; <span id="date1"></span> Akanimo Ebong | Last Updated: <time></time> <span id="date2"></span>
-    </p>
-  </footer>
-  <script src="scripts/date.js"></script>
-</body>
-</html>
 
-<!-- https://akanimo47.github.io/wdd230/ -->
+
+
+    <div id="mode">
+        🕶️
+    </div>
+
+    <main>
+        <section class="events">
+            <h2>Events</h2>
+            <h3>Help Standard Companies Recruit Top Talent</h3>
+            <p>There were 11 thousand open jobs in Calabar, Nigeria has at December 2023.
+                Similar work shortages are rising globally. One of the best ways we can support your chamber members
+                is to help build or refresh their job boards.
+            </p>
+            <p>Locate Us.</p>
+
+        </section>
+
+        <section class="weather">
+            <h3>Weather</h3>
+            <!-- <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            </p> -->
+            <div class="weather-info">
+                <img src="" id="weather-icon" alt="weather icon">
+                <h3><span id="temp-value"></span>&deg;C</h3>
+            </div>
+            <p id="weather-desc"></p>
+            <hr>
+            <div class="wind-speed">
+                <p>Wind Speed: </p>
+                <p><span id="wind-speed-value"></span>km/h</p>
+            </div>
+            <div class="wind-chill">
+                <p>Wind Chill:</p>
+                <p id="wind-chill-display"> </p>
+            </div>
+
+        </section>
+
+        <div id="join">
+            <h2><a href="join.html">Join Us!</a> </h2>
+            <p>Discover how to join the Calabar Chamber of
+                Commerce and how it can work for you!</p>
+        </div>
+
+        <section class="job_search">
+            <h3>Job Search</h3>
+            <div>
+                <h4>Job Search</h4>
+                <img src="images/job.jpg" alt="My Job Search">
+                <p>Find the best Job Opportunity on our site</p>
+                <section>
+                    <p>+234-90-6707-2323</p>
+                    <p>2210 Plaza Drive, Ste 150 <a></a></p>
+                </section>
+
+            </div>
+        </section>
+
+        <section class="food">
+            <div>
+                <h3>Food</h3>
+                <img src="images/food.jpg" alt="Food Hunt">
+                <p>Find the best hot delicacy of African dishes.</p>
+                <section>
+                    <p>+234-8077496842</p>
+                    <p>Canteen Hall<a></a></p>
+                </section>
+            </div>
+        </section>
+
+        <section class="tech">
+            <div>
+
+                <h4>Tech</h4>
+                <img src="images/iphone.jpg" alt="Tech Shop">
+                <p>Tech Opportunity</p>
+                <section>
+                    <p>Office 5<a></a></p>
+                </section>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer1">
+            <img src="images/crs-logo.png" alt="Calabar Chamber Logo">
+            <h1>Calabar Chamber of Commerce</h1>
+            <p id="p1"><i>Ndidem Usang Iso Rd, Leopad Town 540281,</i></p>
+            <p id="p2"><i>Calabar, Cross River</i></p>
+        </div>
+        <div class="footer2">
+            <p>info@CalabarC.org</p>
+            <p>+2349(0)8100390938</p>
+            <p><a href="https://goo.gl/maps/JghALKhKGBEYLbPJ8"> 📍 Direction</a> </p>
+            <div class="footer3">
+                <p>©<span id="copyrightyear"></span>Calabar Chamber || Akanimo Ephraim Ebong || WDD 230
+                    Project
+                <p> Last Modificaion: <span id="lastModified"></span></p>
+                <p>Weather Data Provided by:<a href="https://openweathermap.org/city/2346229"> Open Weather Map</a> </p>
+            </div>
+            <script src="scripts/getdates.js"></script>
+            <script src="scripts/darkmode.js"></script>
+            <script src="scripts/weatherapi.js"></script>
+            <!-- <script src="scripts/responsiveMenu.js"></script>
+            <script src="scripts/weatherapi.js"></script>
+            <script src="chamber/scripts/spotlight.js"></script>
+            <script src="chamber/scripts/windchill.js"></script> -->
+
+    </footer>
+
+
+</body>
