@@ -65,34 +65,33 @@
 
     <main>
 
-        <body>
-            <form action="record.html" method="get">
-                <div>
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-                <div>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required pattern="Accounting123@">
-                </div>
-                <div>
-                    <label for="confirm_password">Confirm Password:</label>
-                    <input type="password" id="confirm_password" name="confirm_password" required>
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required pattern="akanebong@byui.edu"
-                        title="A valid byui.edu email address.">
-                </div>
-                <div>
-                    <label for="page_rating">Page Rating:</label>
-                    <input type="range" id="page_rating" name="page_rating" min="1" max="10" step="1"
-                        onchange="document.getElementById('rating_value').innerText = this.value;">
-                    <span id="rating_value">1</span>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
-        </body>
+        <form action="record.html" method="get">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required pattern="Accounting123@">
+            </div>
+            <div>
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required pattern="akanebong@byui.edu"
+                title="A valid byui.edu email address.">
+            </div>
+            <div>
+                <label for="page_rating">Page Rating:</label>
+                <input type="range" id="page_rating" name="page_rating" min="1" max="10" step="1"
+                onchange="document.getElementById('rating_value').innerText = this.value;">
+                <span id="rating_value">1</span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+
     </main>
 
     <footer class="footer">
@@ -107,12 +106,13 @@
             <p>info@CalabarC.org</p>
             <p>+2349(0)8100390938</p>
             <p><a href="https://goo.gl/maps/JghALKhKGBEYLbPJ8"> 📍 Direction</a> </p>
-            <div class="footer3">
-                <p>©<span id="copyrightyear"></span>Calabar Chamber || Akanimo Ephraim Ebong || WDD 230
+        </div>
+        <div class="footer3">
+            <p>©<span id="copyrightyear"></span>Calabar Chamber || Akanimo Ephraim Ebong || WDD 230
                     Project
-                <p> Last Modificaion: <span id="lastModified"></span></p>
-                <p>Weather Data Provided by:<a href="https://openweathermap.org/city/2346229"> Open Weather Map</a> </p>
-            </div>
+            <p> Last Modificaion: <span id="lastModified"></span></p>
+            <p>Weather Data Provided by:<a href="https://openweathermap.org/city/2346229"> Open Weather Map</a> </p>
+        </div>
             <script src="scripts/getdates.js"></script>
             <script src="scripts/darkmode.js"></script>
             <script src="form-validation.js"></script>
