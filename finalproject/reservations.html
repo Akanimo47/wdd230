@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ~Scoots~ </title>
+    <meta name="author" content=" Akanimo Ephraim Ebong" />
+    <meta name="description"
+        content=" A fictitious 🛵 motor scooter rental company : Cozumel off the coast of Mexico" />
+
+
+    <meta property="og:title" content="~Scoots~" />
+    <meta property="og:type" content="Cozumel" />
+    <meta property="og:url" content="https://akanimo47.github.io/wdd230/finalproject" />
+    <meta property="og:image" content="https://github.com/Akanimo47/wdd230/blob/main/images/akanimopr.jpg" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="css/medium.css"> -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+
+    <link rel="icon" href="favicon.ico">
+
+</head>
+
+<body>
+
+    <div class="closeable-message">
+        <p>Today's high temperature: <span id="high-temperature"></span></p>
+        <button onclick="closeMessage()">Close</button>
+    </div>
+
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Scoots Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Reservations Page -->
+    <section id="reservations">
+        <h2>Reservations</h2>
+        <div class="reservation-form">
+            <form action="submit_reservation.php" method="post">
+                <label for="rental-type">Rental Type:</label>
+                <select id="rental-type" name="rental-type">
+                    <option value="Honda Metropolitan (49cc)">Honda Metropolitan (49cc) - 1 person</option>
+                    <option value="Honda Dio (110cc)">Honda Dio (110cc) - 2 person</option>
+                    <option value="Honda PCX150 (149cc)">Honda PCX150 (149cc) - 2 person</option>
+                    <option value="Honda Pioneer 1000">Honda Pioneer 1000 - 4 person</option>
+                    <option value="Jeep Wrangler - 4 door manual with A/C">Jeep Wrangler - 4 door manual with A/C - 5
+                        person</option>
+                    <option value="Jeep Wrangler - 2 door - open air - manual">Jeep Wrangler - 2 door - open air -
+                        manual - 4 person</option>
+                </select><br><br>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br><br>
+
+                <label for="period">Period:</label>
+                <input type="text" id="period" name="period" placeholder="e.g., Half Day or Full Day" required><br><br>
+
+                <label for="number-of-people">Number of People:</label>
+                <input type="number" id="number-of-people" name="number-of-people" required><br><br>
+
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" name="phone-number" required><br><br>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="state-or-country">Home State or Country:</label>
+                <input type="text" id="state-or-country" name="state-or-country" required><br><br>
+
+                <label for="cruise-line">Cruise Line (if applicable):</label>
+                <input type="text" id="cruise-line" name="cruise-line"><br><br>
+
+                <label for="special-accommodations">Special Accommodations/Comments:</label><br>
+                <textarea id="special-accommodations" name="special-accommodations" rows="4"
+                    cols="50"></textarea><br><br>
+
+                <input type="submit" value="Submit Reservation">
+            </form>
+        </div>
+    </section>
+
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer1">
+            <img src="images/logo.jpg" alt="🛵 motor scooter rental company">
+            <h1> ~Scoots~ </h1>
+            <p id="p1"><i> Quintana Roo, Mexico </i></p>
+
+        </div>
+        <div class="footer2">
+            <p>info@CalabarC.org</p>
+            <p>+2349(0)8100390938</p>
+            <p><a
+                    href="https://www.google.com/maps/place/Cozumel/@20.4255199,-87.0284159,11z/data=!4m6!3m5!1s0x8f4ef8efb0d19327:0x342ebcae5c018bfc!8m2!3d20.4229839!4d-86.9223432!16zL20vMDFibmQ3?entry=ttu">
+                    📍 Direction</a> </p>
+            <div class="footer3">
+                <p>©<span id="copyrightyear"></span>🛵 motor scooter rental company || Akanimo Ephraim Ebong || Mexico
+                <p> Last Modificaion: <span id="lastModified"></span></p>
+                <p>Weather Data Provided by:<a href="https://openweathermap.org/city/2346229"> Open Weather Map</a> </p>
+            </div>
+            <script src="scripts/getdates.js"></script>
+            <script src="scripts/darkmode.js"></script>
+            <script src="scripts/weatherapi.js"></script>
+            <!-- <script src="scripts/responsiveMenu.js"></script>
+            <script src="scripts/weatherapi.js"></script>
+            <script src="chamber/scripts/spotlight.js"></script>
+            <script src="chamber/scripts/windchill.js"></script> -->
+
+    </footer>
+
+
+</body>
+
+</html>

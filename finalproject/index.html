@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ~Scoots~ </title>
+    <meta name="author" content=" Akanimo Ephraim Ebong" />
+    <meta name="description"
+        content=" A fictitious 🛵 motor scooter rental company : Cozumel off the coast of Mexico" />
+
+
+    <meta property="og:title" content="~Scoots~" />
+    <meta property="og:type" content="Cozumel" />
+    <meta property="og:url" content="https://akanimo47.github.io/wdd230/finalproject" />
+    <meta property="og:image" content="https://github.com/Akanimo47/wdd230/blob/main/images/akanimopr.jpg" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="css/medium.css"> -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+
+    <link rel="icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <div class="closeable-message">
+        <p>Today's high temperature: <span id="high-temperature"></span></p>
+        <button onclick="closeMessage()">Close</button>
+    </div>
+
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Scoots Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Welcome to ~Scoots~</h1>
+        <p>Your adventure starts here!</p>
+        <a href="reservations.html" class="btn">Make a Reservation</a>
+    </section>
+
+
+    <section id="rental-summary">
+        <h2>Explore Our Rentals</h2>
+        <p>We offer a variety of rental options to suit your needs:</p>
+        <ul>
+            <li>Honda Motor Scooters</li>
+            <li>Side-by-Side ATVs</li>
+            <li>Jeeps</li>
+        </ul>
+    </section>
+
+    <!-- Social media links -->
+    <section id="social-media">
+        <h2>Connect with Us</h2>
+        <p>Follow us on social media for updates and promotions:</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </section>
+
+
+    <section id="weather">
+        <h2>Weather Forecast</h2>
+        <div id="weather-info">
+        </div>
+    </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer1">
+            <img src="images/logo.jpg" alt="🛵 motor scooter rental company">
+            <h1> ~Scoots~ </h1>
+            <p id="p1"><i> Quintana Roo, Mexico </i></p>
+
+        </div>
+        <div class="footer2">
+            <p>info@CalabarC.org</p>
+            <p>+2349(0)8100390938</p>
+            <p><a
+                    href="https://www.google.com/maps/place/Cozumel/@20.4255199,-87.0284159,11z/data=!4m6!3m5!1s0x8f4ef8efb0d19327:0x342ebcae5c018bfc!8m2!3d20.4229839!4d-86.9223432!16zL20vMDFibmQ3?entry=ttu">
+                    📍 Direction</a> </p>
+            <div class="footer3">
+                <p>©<span id="copyrightyear"></span>🛵 motor scooter rental company || Akanimo Ephraim Ebong || Mexico
+                <p> Last Modificaion: <span id="lastModified"></span></p>
+                <p>Weather Data Provided by:<a href="https://openweathermap.org/city/2346229"> Open Weather Map</a> </p>
+            </div>
+            <script src="scripts/getdates.js"></script>
+            <script src="scripts/darkmode.js"></script>
+            <script src="scripts/weatherapi.js"></script>
+            <script src="scripts/closemasage.js"></script>
+            <!-- <script src="scripts/weatherapi.js"></script>
+            <script src="chamber/scripts/spotlight.js"></script>
+            <script src="chamber/scripts/windchill.js"></script> -->
+    </footer>
+
+
+</body>
+
+</html>
